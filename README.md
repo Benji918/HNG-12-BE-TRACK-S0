@@ -50,11 +50,6 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
-### Apply Migrations
-```bash
-python manage.py migrate
-```
-
 ### Run the Server
 ```bash
 python manage.py runserver

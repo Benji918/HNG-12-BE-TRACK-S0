@@ -8,7 +8,7 @@ class InfoAPIView(generics.GenericAPIView):
     def get(self, request, *args, **kwargs):
         data = {
             'email': 'ugochukwub79@gmail.com',
-            'current_datatime': now().isoformat(),
+             'current_datetime': now().isoformat(timespec='seconds').replace('+00:00', 'Z'),
             'github_url': 'https://github.com/Benji918/HNG-12-BE-TRACK-S0'
         }
 

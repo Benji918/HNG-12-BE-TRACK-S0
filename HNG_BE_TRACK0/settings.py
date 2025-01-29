@@ -155,4 +155,6 @@ SPECTACULAR_SETTINGS = {
 
 }
 
+STATIC_ROOT = BASE_DIR/'assets'
+
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"

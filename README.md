@@ -13,7 +13,7 @@ This is a simple public API built with Django Rest Framework (DRF) for the HNG12
 - **CORS Handling:** Enabled using `django-cors-headers`
 
 ## API Endpoint
-### Base URL: `http://<your-deployment-url>/`
+### Base URL: `https://hng-12-be-track-s0.onrender.com/`
 
 ### GET `/`
 #### Response Format:
@@ -26,7 +26,7 @@ This is a simple public API built with Django Rest Framework (DRF) for the HNG12
 ```
 
 ### Swagger Documentation
-- Available at: `http://<your-deployment-url>/swagger/`
+- Available at: `https://hng-12-be-track-s0.onrender.com/swagger/`
 
 ## Installation & Setup
 
@@ -35,7 +35,7 @@ Ensure you have Python and pip installed on your system.
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/Benji918/HNG-12-BE-TRACK-S0.git
 cd your-repo
 ```
 
@@ -61,7 +61,6 @@ python manage.py runserver
 ```
 
 ### Access the API
-- Open `http://127.0.0.1:8000/` to see the API response.
 - Open `http://127.0.0.1:8000/swagger/` for API documentation and Response.
 
 ## Deployment Guide

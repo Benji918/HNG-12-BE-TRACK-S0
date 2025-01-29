@@ -146,8 +146,8 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'https://hng-12-be-track-s0.onrender.com',
-    'http://127.0.0.1:8000'
+    env('CORS_URL1'),
+    env('CORS_URL2')
 ]
 
 

@@ -15,7 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
+from django.views.generic import RedirectView
+
 from BE_TRACK0.views import InfoAPIView
 from drf_spectacular.views import (
     SpectacularAPIView,
@@ -25,7 +27,8 @@ from drf_spectacular.views import (
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', InfoAPIView.as_view(), name='info'),
+    re_path(r'^$', RedirectView.as_view(url='/swagger/', permanent=True)),  # Redirect root to Swagger
+    path('info/', InfoAPIView.as_view(), name='info'),
     path('schema/', SpectacularAPIView.as_view(), name='schema'),
     path('swagger/', SpectacularSwaggerView.as_view(), name='swagger-ui'),
     path('redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
